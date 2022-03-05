@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+/*----------------------------------1. Global Styling-------------------------------*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*colors*/
+    --paars: #5722CD;
+    --lichtpaars: #F2F0FF;
+    --blauw: #4845E4;
+    --roze: #ED4385;
+    --zwart: #0C0C0C;
+    --grijs: #7A7A7A;
+    --lichtgrijs: #F3F6F9;
+    --wit: #FFFFFF;
+}
+
+/*---------------------------2. Typografie-----------------------------------------------*/
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    overflow-wrap: break-word;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*----------------------------------------------3. Layout ---------------------------------*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------------------------------------Header----------------------------------*/
+
+header {
+    background-color: var(--paars);
+    display: flex;
+    flex-direction: column;
+    color: var(--lichtgrijs);
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 400px;
+    padding: 20px;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    color: var(--lichtpaars);
+    flex-shrink: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--lichtpaars);
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 1rem;
+    margin-right: 40px;
+}
+
+button {
+    background-color: var(--roze);
+    border: none;
+    color: var(--lichtpaars);
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 8px;
+    align-self: center;
+}
+
+header img {
+    height: 50px;
+}
+
+/* ---------------------------------- hello ------------------------------------------ */
+
+.hello {
+    border: 5px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--wit);
+    text-align: center;
+    color: var(--paars);
+    padding-bottom: 20px;
+
+}
+
+.hello div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 250px;
+    min-width: 600px;
+    max-width: 700px;
+    margin: 50px;
+}
+
+.hello p {
+    color: var(--zwart);
+    margin-bottom: 25px;
+}
+
+/*------------------------------------WORK-------------------------------------------*/
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.work article{
+    border: 5px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    flex-shrink: 0;
+    flex-grow: 1;
+    align-items: center;
+    margin: 25px
+}
+
+.work article div{
+    border: 5px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 300px;
+    width: 200px;
+    margin: 50px;
+    flex-grow: 1;
+    padding: 25px;
+}
+
+.work article img {
+    width:60%;
+}
+
+.work article div img {
+    width: 10%;
+}
+
+
+
+/*.work {*/
+/*    border: 4px solid black;*/
+/*    display: flex;*/
+/*    background-color: var(--lichtgrijs);*/
+/*    flex-direction: column;*/
+/*    padding:50px;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.work article {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    border: 5px solid purple;*/
+/*    margin: 15px;*/
+/*}*/
+
+/*.work article img {*/
+/*    width: 60%;*/
+/*    padding: 10px 0px 15px;*/
+/*}*/
+
+/*.work article div {*/
+/*    display:flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-around;*/
+/*    margin: 10px;*/
+/*    font-size: small;*/
+/*    border: 5px solid blue;*/
+/*}*/
+
+/*.work article div img {*/
+/*    width:10%;*/
+/*}*/
+
+/*.work article a {*/
+/*    text-decoration: none;*/
+/*    color: var(--paars);*/
+/*    font-family: "Roboto Thin", sans-serif;*/
+/*    font-weight: 10;*/
+/*    font-size: 12px;*/
+/*    margin-right: 40px;*/
+/*}*/
+
+/*.variety {*/
+/*    flex-direction: row-reverse;*/
+/*}*/
+
+/*------------------------------------SERVICES-------------------------------------------*/
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.services article {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px 10px 10px;
+    padding: 15px
+}
+
+.services img {
+    width: 20%;
+}
+
+.services article p {
+    font-size: small;
+    color: var(--grijs);
+}
+
+/*--------------------------------------------Formulier--------------------------------------*/
+
+.formulier {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blauw);
+    color: var(--lichtgrijs);
+    padding: 25px;
+}
+
+.formulier form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formulier form div {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--zwart);
+    color: var(--wit);
+    font-size: smaller;
+
+}
+
+/*------------------------------------------4. Areas ----------------------------------------*/
+
+
