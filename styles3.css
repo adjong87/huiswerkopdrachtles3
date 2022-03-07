@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*colors*/
+    --paars: #5722CD;
+    --lichtpaars: #F2F0FF;
+    --blauw: #4845E4;
+    --roze: #ED4385;
+    --zwart: #0C0C0C;
+    --grijs: #7A7A7A;
+    --lichtgrijs: #F3F6F9;
+    --wit: #FFFFFF;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    overflow-wrap: break-word;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------ 3. Areas ---------------------------*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--paars);
+    display: flex;
+    flex-direction: column;
+    color: var(--lichtgrijs);
+    flex-basis: 600px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 400px;
+    padding: 20px;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    color: var(--lichtpaars);
+    flex-shrink: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--lichtpaars);
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 1rem;
+    margin-right: 40px;
+}
+
+header img {
+    width:75px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hello {
+    flex-basis: 600px;
+}
